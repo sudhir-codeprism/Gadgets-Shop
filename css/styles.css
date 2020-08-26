@@ -1,0 +1,242 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+/* ----------------------- Main Header --------------------- */
+.main-header{
+    background: white url("../images/image5.jpeg") repeat scroll center;
+    padding: 12px;
+    color: white;
+    text-align: right;
+    box-shadow: 0 0 10px black;
+}
+/* ----------------------- Main navbar --------------------- */
+.main-navbar{
+    background-color: black;
+    box-shadow: 0 0 10px black;
+    padding: 5px;
+}
+.main-navbar a{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 25px;
+    display: inline-block;
+}
+.main-navbar a:hover{
+    background: linear-gradient(45deg,darkslategray,#6c3930);
+    border-radius: 50px;
+}
+.main-navbar a.active{
+    background: linear-gradient(45deg,darkslategray,darkred);
+    border-radius: 50px;
+}
+
+/* ----------------------- Home News Section --------------------- */
+.home-news-section{
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.home-news-article{
+    border: 2px solid darkred;
+    width: 330px;
+    text-align: center;
+    display: inline-grid;
+    height: 500px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 30px 0 30px 0;
+    transition: all 0.5s;
+}
+.home-news-article img{
+    width: 100%;
+}
+.home-news-article h2{
+    color: darkred;
+}
+.home-news-article:hover{
+    width: 340px;
+    box-shadow: 0 0 15px darkred;
+    cursor: pointer;
+}
+
+/* ----------------------- Main News Section --------------------- */
+.main-news-section{
+    width: 80%;
+    margin: auto;
+}
+.main-news-article{
+    box-shadow: 0 0 10px darkred;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #f7d6d1;
+}
+.main-news-article h2{
+    background: linear-gradient(45deg,#6c3930,black,#6c3930);
+    color: white;
+    padding: 20px;
+    border-radius: 10px 10px 0 0;
+}
+.main-news-article p{
+    color: darkred;
+    font-size: 18px;
+    padding: 15px;
+}
+.zoom{
+    width: 500px;
+    height: 300px;
+    margin: auto;
+    box-shadow: 0 0 10px darkred;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.zoom img{
+    width: inherit;
+    height: inherit;
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+.zoom:hover img{
+    transform: scale(1.2,1.2);
+}
+
+/* ----------------------- Main Footer --------------------- */
+.main-footer{
+    background: linear-gradient(45deg,#6c3930,black,#6c3930);
+    padding: 12px;
+    text-align: center;
+    color: white;
+}
+.main-footer a{
+    color: #f5b8a3;
+    text-decoration: none;
+}
+
+/* ----------------------- Main gallery --------------------- */
+.gallery-section{
+  margin-top: 15px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.gallery-figure{
+    width: 300px;
+    display: inline-block;
+    margin: 5px;
+    padding: 5px;
+    background-color: lightsalmon;
+    border-radius: 10px;
+}
+.gallery-figure:hover{
+    box-shadow: 0 0 10px darkred;
+}
+.gallery-figure figcaption{
+    background: linear-gradient(45deg,#6c3930,black,#6c3930);
+    color: white;
+    padding: 12px;
+    border-radius: 10px;
+}
+.gallery-zoom{
+    width: 300px;
+    height: 200px;
+    margin-bottom: 5px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.gallery-zoom img{
+    width: inherit;
+    height: inherit;
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+.gallery-zoom:hover img{
+    transform: scale(1.2,1.2);
+}
+
+/* ----------------------- About Section --------------------- */
+.about-section{
+    width: 80%;
+    margin: auto;
+}
+.about-article{
+    background: white url("../images/gallery_mobile_3.jpg") no-repeat scroll top;
+    color: white;
+    padding: 12px;
+    margin: 15px;
+    border-radius: 15px 0 15px 0;
+    box-shadow: 0 0 10px black;
+	    background-color: black;
+}
+.company-images-div{
+    text-align: center;
+}
+.company-images-div img{
+    width: 250px;
+    height: 150px;
+    margin: 5px;
+    border-radius: 15px 0 15px 0;
+    box-shadow: 0 0 10px black;
+}
+/* ------------------ Contact Form -------------- */
+.contact-section{
+    background: white url("../images/image5.jpeg") no-repeat scroll bottom;
+    padding: 12px;
+}
+.contact-article{
+    width: 250px;
+    text-align: center;
+    margin: auto;
+    background-color: rgba(0,0,0,0.5);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ccb499  ;
+}
+.contact-article h2{
+    color: #907a61;
+    font-size: 25px;
+}
+.input-field{
+    text-align: center;
+    border: none;
+    outline: none;
+    height: 35px;
+    font-size: 18px;
+    margin: 5px;
+    background: transparent;
+    color: white;
+    width: 200px;
+    border-bottom: 3px solid #907a61;
+}
+.input-field:focus{
+    border-bottom: 3px solid #ccb499;
+}
+::placeholder{
+    color: #ccb499;
+}
+.contact-form textarea{
+    margin: 5px;
+    background: transparent;
+    border: 3px solid #907a61;
+    outline: none;
+    width: 180px;
+    border-radius: 5px;
+    color: white;
+}
+.contact-form textarea:focus{
+    border: 3px solid #ccb499;
+}
+.contact-form #contact-btn{
+    background: linear-gradient(45deg,black,#907a61);
+    color: white;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    padding: 10px 25px;
+    width: 200px;
+    border-radius: 50px;
+    box-shadow: 0 0 5px black;
+}
+.contact-form #contact-btn:hover{
+    box-shadow: 0 0 5px #907a61;
+    cursor: pointer;
+}
